@@ -27,8 +27,8 @@ const ParentComponent = () => {
   };
 
   useEffect(() => {
-    console.log("Product from child", products);
-  });
+    // axios.get
+  })
 
   return (
     <>

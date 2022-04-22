@@ -1,19 +1,12 @@
-import { useEffect, useState } from "react";
-
 const ChildComponent = (props) => {
-  const [products, setProducts] = useState({});
 
-  useEffect(() => {
-    setProducts({
+  const sendPackage = () => {
+    props.received({
       id: Math.floor(Math.random() * 100) + 1,
       productName: props.products,
       size: 34,
       color: "Green Army",
     });
-  }, [props.products]);
-
-  const sendPackage = () => {
-    props.received(products);
   };
 
   return (
