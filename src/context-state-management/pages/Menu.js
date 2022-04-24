@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { LangContext, ThemeContext } from "./LanguagePage";
-
+// @ts-ignore
 function Menu() {
   const props = useContext(LangContext);
   const themeProps = useContext(ThemeContext);

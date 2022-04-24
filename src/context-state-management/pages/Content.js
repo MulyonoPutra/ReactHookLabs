@@ -1,8 +1,8 @@
-import { LangConsumer } from "./LanguagePage";
+
 
 function Content() {
   return (
-    <LangConsumer>
+    <>
       {(props) => (
         <div>
           <i>-- Content --</i>
@@ -10,7 +10,7 @@ function Content() {
           <p>Theme : ... </p>
         </div>
       )}
-    </LangConsumer>
+    </>
   );
 }
 
