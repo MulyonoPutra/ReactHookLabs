@@ -5,6 +5,7 @@ import { useState } from "react";
 
 import "./App.css";
 import FunctionalComponent from "lifecycle/FunctionalComponent";
+import NewsFeed from "case-study/NewsFeed";
 
 function App() {
   const [toggle, setToggle] = useState(true);
@@ -14,10 +15,11 @@ function App() {
     <div className="App">
       {/*  <ParentComponent /> */}
       {/* <SubscribeBox/> */}
-      <div>
+      <NewsFeed/>
+{/*       <div>
         <button onClick={handleToggle}>Toggle</button>
         {toggle && <FunctionalComponent />}
-      </div>
+      </div> */}
     </div>
   );
 }

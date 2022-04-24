@@ -1,5 +1,5 @@
-import TodoCreate from "case-study/todo-create/TodoCreate";
-import TodoListItem from "case-study/todo-list/TodoList";
+import TodoCreate from "case-study/todo/TodoCreate";
+import TodoListItem from "case-study/todo/TodoList";
 import { useState } from "react";
 /**
  * Parent Component
