@@ -6,6 +6,7 @@ import { useState } from "react";
 import "./App.css";
 import FunctionalComponent from "lifecycle/FunctionalComponent";
 import NewsFeed from "case-study/NewsFeed";
+import LanguagePage from "context-state-management/pages/LanguagePage";
 
 function App() {
   const [toggle, setToggle] = useState(true);
@@ -15,8 +16,9 @@ function App() {
     <div className="App">
       {/*  <ParentComponent /> */}
       {/* <SubscribeBox/> */}
-      <NewsFeed/>
-{/*       <div>
+      {/* <NewsFeed /> */}
+      <LanguagePage />
+      {/*       <div>
         <button onClick={handleToggle}>Toggle</button>
         {toggle && <FunctionalComponent />}
       </div> */}
