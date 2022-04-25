@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import ChildComponent from "./Child";
 
 const ParentComponent = () => {
-  
   const items = {
     id: Math.floor(Math.random() * 100) + 1,
     productName: "",
@@ -28,22 +27,41 @@ const ParentComponent = () => {
 
   useEffect(() => {
     // axios.get
-  })
+  });
 
   return (
     <>
-      <div>
-        <h4>Mulyono Putra want to buy Cargo Pants</h4>
-        <button onClick={sendToChild}> Order </button>
-        <br />
-        Receive from Seller:
-        <ul>
-          <li>Product Name: {products.productName}</li>
-          <li>Size: {products.size}</li>
-          <li>Color: {products.color}</li>
-        </ul>
-        <br />
-        <hr />
+      <div className="container">
+        <div className="mt-4 d-flex justify-content-center">
+          <div className="card" style={{ width: "18rem", cursor: "pointer" }}>
+            <div
+              className="card-header"
+              style={{ cursor: "pointer", fontWeight: "bold" }}
+            >
+              Order
+            </div>
+            <ul className="list-group list-group-flush">
+              <li className="list-group-item">
+                {products.productName ? products.productName : `Product`}
+              </li>
+              <li className="list-group-item">
+                {products.size ? products.size : "Size"}
+              </li>
+              <li className="list-group-item">
+                {products.color ? products.color : "Color"}
+              </li>
+              <li>
+                <button
+                  type="button"
+                  className="btn btn-primary m-2"
+                  onClick={sendToChild}
+                >
+                  Send to Child
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
         <ChildComponent products={product} received={productsReceived} />
       </div>
     </>

@@ -1,6 +1,6 @@
-import GlobalContext from "context-state-management/context/GlobalContext";
+import GlobalContext from "state-management/context/GlobalContext";
 import Footer from "./Footer";
-import Header from "./Header";
+import Header from "../../views/Header";
 import Menu from "./Menu";
 
 // @ts-ignore

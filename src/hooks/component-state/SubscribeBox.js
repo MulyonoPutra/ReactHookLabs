@@ -17,24 +17,57 @@ function SubscribeBox() {
   };
 
   return (
-    <div>
-      <p>
-        <button onClick={handleSubscribe}>Subscribe</button>
-        <span>{JSON.stringify(state.subscribe)}</span>
-      </p>
-      <p>
-        <button onClick={handleLike}>Like</button>
-        <span>{like}</span>
-      </p>
-      <p>
-        <button onClick={handleDislike}>Dislike</button>
-        <span>{dislike}</span>
-      </p>
-      <p>
-        <button onClick={handleTripleLike}>Triple Like</button>
-        <span>{like}</span>
-      </p>
-    </div>
+    <>
+      <div className="container mt-4 d-flex justify-content-center">
+        <div className="row">
+          <div className="col">
+            {" "}
+            <div>
+              <button className="btn btn-primary" onClick={handleSubscribe}>
+                Subscribe
+              </button>{" "}
+              <br />
+              <span>
+                {JSON.stringify(state.subscribe)}
+              </span>
+            </div>
+          </div>
+          <div className="col">
+            {" "}
+            <div>
+              <button className="btn btn-primary" onClick={handleLike}>
+                Like
+              </button>
+              <br />
+              <span>{like}</span>
+            </div>
+          </div>
+          <div className="col">
+            {" "}
+            <div>
+              <button className="btn btn-danger" onClick={handleDislike}>
+                Dislike
+              </button>
+              <br />
+              <span>{dislike}</span>
+            </div>
+          </div>
+          <div className="col">
+            <div>
+              <button
+                className="btn btn-warning"
+                style={{ width: "7rem" }}
+                onClick={handleTripleLike}
+              >
+                Triple Like
+              </button>
+              <br />
+              <span>{like}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 

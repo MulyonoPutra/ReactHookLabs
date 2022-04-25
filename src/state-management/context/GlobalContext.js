@@ -32,7 +32,7 @@ function GlobalContext() {
     LangContext,
     LangProvider,
     ThemeContext,
-    ThemeProvider
+    ThemeProvider,
   };
 }
 

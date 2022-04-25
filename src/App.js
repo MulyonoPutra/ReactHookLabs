@@ -6,7 +6,9 @@ import { useState } from "react";
 import "./App.css";
 import FunctionalComponent from "lifecycle/FunctionalComponent";
 import NewsFeed from "case-study/NewsFeed";
-import LanguagePage from "context-state-management/pages/LanguagePage";
+import LanguagePage from "state-management/pages/LanguagePage";
+import Router from "router";
+import Header from "views/Header";
 
 function App() {
   const [toggle, setToggle] = useState(true);
@@ -14,10 +16,12 @@ function App() {
   const handleToggle = () => setToggle((currentState) => !currentState);
   return (
     <div className="App">
+      <Header/>
+      <Router/>
       {/*  <ParentComponent /> */}
       {/* <SubscribeBox/> */}
       {/* <NewsFeed /> */}
-      <LanguagePage />
+      {/* <LanguagePage /> */}
       {/*       <div>
         <button onClick={handleToggle}>Toggle</button>
         {toggle && <FunctionalComponent />}
