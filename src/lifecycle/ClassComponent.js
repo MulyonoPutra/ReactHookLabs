@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 
 class ClassComponent extends Component {
   constructor(props) {
@@ -11,10 +11,16 @@ class ClassComponent extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.handleCount}>Count</button>
-        <p>{this.state.count}</p>
-      </div>
+      <>
+        <div className="container mt-4">
+          <button
+            onClick={this.handleCount}
+            className="btn btn-primary">
+            Count
+          </button>
+          <p>{this.state.count}</p>
+        </div>
+      </>
     );
   }
 

@@ -1,6 +1,8 @@
 import CaseStudy from "case-study/CaseStudy";
 import ComponentRelation from "hooks/component-relation/ComponentRelation";
 import CustomHooks from "hooks/component-state/CustomHooks";
+import ClassComponent from "lifecycle/ClassComponent";
+import FunctionalComponent from "lifecycle/FunctionalComponent";
 import Lifecycle from "lifecycle/Lifecycle";
 import { Routes, Route } from "react-router-dom";
 import StateManagementContext from "state-management/StateManagementContext";
@@ -13,7 +15,11 @@ function Router() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
+
       <Route path="/lifecycle" element={<Lifecycle />} />
+      <Route path="/class" element={<ClassComponent />} />
+      <Route path="/functional" element={<FunctionalComponent />} />
+
       <Route path="/custom-hooks" element={<CustomHooks />} />
       <Route path="/case-study" element={<CaseStudy />} />
       <Route path="/relation" element={<ComponentRelation />} />
@@ -24,3 +30,7 @@ function Router() {
 }
 
 export default Router;
+
+/**
+ * rafc: Shortcut for create new React Arrow Function Component.
+ */

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import useCounter from "./UseCounter";
 
 function SubscribeBox() {

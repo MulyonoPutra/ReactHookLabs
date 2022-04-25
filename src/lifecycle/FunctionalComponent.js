@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function FunctionalComponent() {
   console.log("FunctionalComponent init");
@@ -37,13 +37,17 @@ function FunctionalComponent() {
 
   console.log("FunctionalComponent render DOM");
   return (
-    <div>
-      <h1>Functional Component</h1>
-      <p>
-        <button onClick={handleCount}>Count</button>
-        {count}
-      </p>
-    </div>
+    <>
+      <div className="container mt-4">
+        <p>
+          <button className="btn btn-primary" onClick={handleCount}>
+            Count
+          </button>{" "}
+          <br />
+          {count}
+        </p>
+      </div>
+    </>
   );
 }
 

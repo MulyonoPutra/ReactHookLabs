@@ -1,4 +1,3 @@
-import React from 'react'
 import SubscribeBox from './SubscribeBox'
 
 function CustomHooks() {
