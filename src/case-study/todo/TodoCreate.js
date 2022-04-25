@@ -19,15 +19,25 @@ const TodoCreate = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Enter todo"
-        value={getInputTodo}
-        onChange={handleInputTodo}
-      />
-      <button type="submit">Add</button>
-    </form>
+    <>
+      <div className="container d-flex justify-content-center">
+        <form onSubmit={handleSubmit}>
+          <div className="input-group mb-3" style={{ width: "22rem" }}>
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Enter TODO"
+              aria-label="TODO"
+              value={getInputTodo}
+              onChange={handleInputTodo}
+            />
+            <button className="btn btn-outline-primary" type="submit">
+              Add
+            </button>
+          </div>
+        </form>
+      </div>
+    </>
   );
 };
 

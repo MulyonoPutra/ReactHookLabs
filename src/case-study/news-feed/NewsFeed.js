@@ -52,27 +52,51 @@ function NewsFeed() {
 
   return (
     <div>
-      <h1>News Feed Top Headline</h1>
+      <span>
+        <h1>
+          <strong>News Feed Top Headline</strong>
+        </h1>
+        <p>
+          from{" "}
+          <u>
+            <a href="https://newsapi.org/">newsapi.org</a>
+          </u>
+        </p>
+      </span>
       {isLoading && <div>Loading...</div>}
       {isError && <div>Error: {isError}</div>}
       <ol>
         {news.articles.map((article, index) => {
           return (
-            <li key={index}>
-              <p>{article.title}</p>
-              {/*  <p>{article.description}</p> */}
-              {/*  <img src={article.urlToImage} alt={article.title} /> */}
-            </li>
+            <div className="container mt-2">
+              <div className="card">
+                <div className="card-body">
+                  <li className="d-flex justify-content-start" key={index}>
+                    <p>{article.title}</p>
+                    {/*  <p>{article.description}</p> */}
+                    {/*  <img src={article.urlToImage} alt={article.title} /> */}
+                  </li>
+                </div>
+              </div>
+            </div>
           );
         })}
       </ol>
       {news.articles.length < parseInt(news.totalResults.toString()) ? (
-        <button disabled={isLoading} onClick={() => setPage((c) => c + 1)}>
+        <button
+          disabled={isLoading}
+          onClick={() => setPage((c) => c + 1)}
+          className="btn btn-outline-primary"
+        >
           Load More
         </button>
       ) : null}
-
-      <button disabled={isLoading} onClick={handleRefresh}>
+      &nbsp;
+      <button
+        disabled={isLoading}
+        onClick={handleRefresh}
+        className="btn btn-outline-primary mb-4"
+      >
         Refresh
       </button>
     </div>

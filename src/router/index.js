@@ -1,4 +1,6 @@
 import CaseStudy from "case-study/CaseStudy";
+import NewsFeed from "case-study/news-feed/NewsFeed";
+import Todo from "case-study/todo/Todo";
 import ComponentRelation from "hooks/component-relation/ComponentRelation";
 import CustomHooks from "hooks/component-state/CustomHooks";
 import ClassComponent from "lifecycle/ClassComponent";
@@ -23,13 +25,16 @@ function Router() {
       <Route path="/functional" element={<FunctionalComponent />} />
 
       <Route path="/custom-hooks" element={<CustomHooks />} />
-      <Route path="/case-study" element={<CaseStudy />} />
       <Route path="/relation" element={<ComponentRelation />} />
 
       <Route path="/context" element={<StateManagementContext />} />
       <Route path="/single-context" element={<SingleContext />} />
       <Route path="/multiple-context" element={<MultipleContext />} />
 
+      <Route path="/case-study" element={<CaseStudy />} />
+      <Route path="/news-feed" element={<NewsFeed />} />
+      <Route path="/todo" element={<Todo />} />
+      
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

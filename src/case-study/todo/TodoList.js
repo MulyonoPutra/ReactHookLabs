@@ -1,20 +1,18 @@
-
 /**
  * Child Component
  */
 const TodoListItem = (props) => {
-    return (
-        <div>
-            <h1>Todo List</h1>
-            <ul>
-                {
-                    props.todo.map(todo => {
-                        return <li key={todo.id}>{todo.title}</li>
-                    })
-                }
-            </ul>
-        </div>
-    )
-}
+  return (
+    <div className="container d-flex justify-content-center">
+      <div>
+        <ul>
+          {props.todo.map((todo) => {
+            return <li key={todo.id}>{todo.title}</li>;
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-export default TodoListItem
+export default TodoListItem;
