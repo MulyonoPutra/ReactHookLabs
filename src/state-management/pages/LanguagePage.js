@@ -1,4 +1,4 @@
-import GlobalContext from "state-management/context/GlobalContext";
+import GlobalContext from "state-management/context/global-context/GlobalContext";
 import Footer from "./Footer";
 import Header from "../../views/Header";
 import Menu from "./Menu";

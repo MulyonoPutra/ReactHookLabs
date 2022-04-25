@@ -23,6 +23,7 @@ function FunctionalComponent() {
   useEffect(() => {
     if (count > 0) {
       console.log("FunctionalComponent useEffect: componentDidUpdate");
+      alert("FunctionalComponent useEffect: componentDidUpdate");
     }
   }, [count]);
 

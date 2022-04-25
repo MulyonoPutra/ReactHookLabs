@@ -12,6 +12,12 @@ const ChildComponent = (props) => {
     <>
       <div className="container mt-4 d-flex justify-content-center">
         <div className="card" style={{ width: "18rem" }}>
+          <div
+            className="card-header"
+            style={{ cursor: "pointer", fontWeight: "bold" }}
+          >
+            Child Component
+          </div>
           <div className="card-body">
             <p className="card-text">{props.products}</p>
             <button

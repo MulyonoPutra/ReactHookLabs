@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ChildComponent from "./Child";
 
 const ParentComponent = () => {
@@ -25,10 +25,6 @@ const ParentComponent = () => {
     });
   };
 
-  useEffect(() => {
-    // axios.get
-  });
-
   return (
     <>
       <div className="container">
@@ -38,7 +34,7 @@ const ParentComponent = () => {
               className="card-header"
               style={{ cursor: "pointer", fontWeight: "bold" }}
             >
-              Order
+              Parent Component
             </div>
             <ul className="list-group list-group-flush">
               <li className="list-group-item">
@@ -50,15 +46,16 @@ const ParentComponent = () => {
               <li className="list-group-item">
                 {products.color ? products.color : "Color"}
               </li>
-              <li>
+              <div className="d-flex justify-content-center">
                 <button
                   type="button"
                   className="btn btn-primary m-2"
+                  style={{ width: "8rem", cursor: "pointer" }}
                   onClick={sendToChild}
                 >
                   Send to Child
                 </button>
-              </li>
+              </div>
             </ul>
           </div>
         </div>

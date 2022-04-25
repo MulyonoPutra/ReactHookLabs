@@ -5,6 +5,7 @@ class ClassComponent extends Component {
     super(props);
     this.state = {
       count: 0,
+      messages: "",
     };
     this.handleCount = this.handleCount.bind(this);
   }
@@ -13,12 +14,11 @@ class ClassComponent extends Component {
     return (
       <>
         <div className="container mt-4">
-          <button
-            onClick={this.handleCount}
-            className="btn btn-primary">
+          <button onClick={this.handleCount} className="btn btn-primary">
             Count
           </button>
           <p>{this.state.count}</p>
+          <span>{this.state.messages}</span>
         </div>
       </>
     );
@@ -35,6 +35,9 @@ class ClassComponent extends Component {
    */
   componentDidMount() {
     console.log("ClassComponent componentDidMount");
+    this.setState({
+      messages: "componentDidMount render",
+    });
   }
 
   /**
@@ -42,6 +45,9 @@ class ClassComponent extends Component {
    */
   componentDidUpdate() {
     console.log("ClassComponent componentDidUpdate");
+    if (this.state.count > 0) {
+      alert("ClassComponent componentDidUpdate");
+    }
   }
 
   /**
@@ -49,6 +55,9 @@ class ClassComponent extends Component {
    */
   componentWillUnmount() {
     console.log("ClassComponent componentWillUnmount");
+    this.setState({
+      messages: "componentWillUnmount render",
+    });
   }
 }
 

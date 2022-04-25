@@ -5,6 +5,8 @@ import ClassComponent from "lifecycle/ClassComponent";
 import FunctionalComponent from "lifecycle/FunctionalComponent";
 import Lifecycle from "lifecycle/Lifecycle";
 import { Routes, Route } from "react-router-dom";
+import { MultipleContext } from "state-management/context/multiple-context/MultipleContext";
+import SingleContext from "state-management/context/single-context/SingleContext";
 import StateManagementContext from "state-management/StateManagementContext";
 import About from "views/About";
 import Home from "views/Home";
@@ -23,7 +25,11 @@ function Router() {
       <Route path="/custom-hooks" element={<CustomHooks />} />
       <Route path="/case-study" element={<CaseStudy />} />
       <Route path="/relation" element={<ComponentRelation />} />
+
       <Route path="/context" element={<StateManagementContext />} />
+      <Route path="/single-context" element={<SingleContext />} />
+      <Route path="/multiple-context" element={<MultipleContext />} />
+
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
