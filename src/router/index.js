@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router-dom";
 import ContextPage from "state-management/context/global-context/components/ContextPage";
 import { MultipleContext } from "state-management/context/multiple-context/MultipleContext";
 import SingleContext from "state-management/context/single-context/SingleContext";
+import UserReducerPageWrapper from "state-management/context/use-reducer/UserReducerPageWrapper";
 import StateManagementContext from "state-management/StateManagementContext";
 import About from "views/About";
 import Home from "views/Home";
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/single-context" element={<SingleContext />} />
       <Route path="/multiple-context" element={<MultipleContext />} />
       <Route path="/global" element={<ContextPage />} />
+      <Route path="/global-reducer" element={<UserReducerPageWrapper />} />
 
       <Route path="/case-study" element={<CaseStudy />} />
       <Route path="/news-feed" element={<NewsFeed />} />
@@ -41,7 +43,6 @@ function Router() {
     </Routes>
   );
 }
-
 export default Router;
 
 /**
