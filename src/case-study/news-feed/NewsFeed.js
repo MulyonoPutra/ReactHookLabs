@@ -69,14 +69,8 @@ function NewsFeed() {
         {news.articles.map((article, index) => {
           return (
             <div className="container mt-2">
-              <div className="card">
-                <div className="card-body">
-                  <li className="d-flex justify-content-start" key={index}>
-                    <p>{article.title}</p>
-                    {/*  <p>{article.description}</p> */}
-                    {/*  <img src={article.urlToImage} alt={article.title} /> */}
-                  </li>
-                </div>
+              <div className="alert alert-info" role="alert">
+                <p>{article.title}</p>
               </div>
             </div>
           );
@@ -95,7 +89,7 @@ function NewsFeed() {
       <button
         disabled={isLoading}
         onClick={handleRefresh}
-        className="btn btn-outline-primary mb-4"
+        className="btn btn-outline-primary"
       >
         Refresh
       </button>

@@ -6,10 +6,9 @@ const AComponent = () => {
       {(props) => {
         return (
           <div>
-            <div className="card">
-              <div className="card-body">
-                <p>{props.lang}</p>
-              </div>
+            <div className="alert alert-primary" role="alert">
+              <span>Component A</span>
+              <p>{props.lang}</p>
             </div>
           </div>
         );

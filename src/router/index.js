@@ -7,6 +7,7 @@ import ClassComponent from "lifecycle/ClassComponent";
 import FunctionalComponent from "lifecycle/FunctionalComponent";
 import Lifecycle from "lifecycle/Lifecycle";
 import { Routes, Route } from "react-router-dom";
+import ContextPage from "state-management/context/global-context/components/ContextPage";
 import { MultipleContext } from "state-management/context/multiple-context/MultipleContext";
 import SingleContext from "state-management/context/single-context/SingleContext";
 import StateManagementContext from "state-management/StateManagementContext";
@@ -30,11 +31,12 @@ function Router() {
       <Route path="/context" element={<StateManagementContext />} />
       <Route path="/single-context" element={<SingleContext />} />
       <Route path="/multiple-context" element={<MultipleContext />} />
+      <Route path="/global" element={<ContextPage />} />
 
       <Route path="/case-study" element={<CaseStudy />} />
       <Route path="/news-feed" element={<NewsFeed />} />
       <Route path="/todo" element={<Todo />} />
-      
+
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

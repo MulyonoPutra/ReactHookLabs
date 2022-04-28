@@ -26,7 +26,7 @@ function StateManagementContext() {
           <div className="col">
             <div className="card">
               <div className="card-body">
-                <NavLink className="nav-link" to="/global-context">
+                <NavLink className="nav-link" to="/global">
                   Global Context
                 </NavLink>
               </div>
