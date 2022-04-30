@@ -1,3 +1,7 @@
+import AsyncAwaitPromisePages from "async-await-promise/AsyncAwaitPromisePages";
+import AsyncAwaitComponent from "async-await-promise/components/AsyncAwaitComponent";
+import CallbackComponent from "async-await-promise/components/CallbackComponent";
+import PromiseComponent from "async-await-promise/components/PromiseComponent";
 import CaseStudy from "case-study/CaseStudy";
 import NewsFeed from "case-study/news-feed/NewsFeed";
 import Todo from "case-study/todo/Todo";
@@ -38,6 +42,11 @@ function Router() {
       <Route path="/case-study" element={<CaseStudy />} />
       <Route path="/news-feed" element={<NewsFeed />} />
       <Route path="/todo" element={<Todo />} />
+
+      <Route path="/async-await-promise" element={<AsyncAwaitPromisePages />} />
+      <Route path="/async-await" element={<AsyncAwaitComponent />} />
+      <Route path="/promise" element={<PromiseComponent />} />
+      <Route path="/callback" element={<CallbackComponent />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>

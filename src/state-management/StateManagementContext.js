@@ -36,7 +36,7 @@ function StateManagementContext() {
             <div className="card shadow p-3 mb-5 bg-body rounded-3">
               <div className="card-body">
                 <NavLink className="nav-link" to="/global-reducer">
-                  Global Context - useReducer
+                  useReducer
                 </NavLink>
               </div>
             </div>

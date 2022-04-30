@@ -14,7 +14,8 @@ const UserReducerPage = () => {
                   <input
                     type="text"
                     className="form-control"
-                    onChange={(e) =>
+                    onChange={
+                      (e) =>
                       dispatch({
                         type: "UPDATE_USER",
                         payload: { ...state.user, name: e.target.value },

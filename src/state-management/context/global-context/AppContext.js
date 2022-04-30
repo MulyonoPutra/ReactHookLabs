@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 // @ts-nocheck
-import React, { useState, createContext } from "react";
+import { useState, createContext } from "react";
 export const LangContext = createContext();
 export const ThemeContext = createContext();
 

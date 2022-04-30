@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container">
           <button
             className="navbar-toggler"
@@ -19,28 +19,42 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/context">
+                <NavLink
+                  className="nav-link text-light"
+                  aria-current="page"
+                  to="/context"
+                >
                   State Management Context
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/lifecycle">
+                <NavLink className="nav-link text-light" to="/lifecycle">
                   Lifecycle
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/relation">
+                <NavLink className="nav-link text-light" to="/relation">
                   Component Relation
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/custom-hooks">
+                <NavLink className="nav-link text-light" to="/custom-hooks">
                   Hooks & Custom Hooks
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/case-study">
+                <NavLink className="nav-link text-light" to="/case-study">
                   Case Study
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-light" to="/async-await-promise">
+                  Async Await Promise
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-light" to="/case-study">
+                  Desctructuring
                 </NavLink>
               </li>
             </ul>
