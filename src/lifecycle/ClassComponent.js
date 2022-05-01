@@ -3,10 +3,12 @@ import { Component } from "react";
 class ClassComponent extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       count: 0,
       messages: "",
     };
+    
     this.handleCount = this.handleCount.bind(this);
   }
 
