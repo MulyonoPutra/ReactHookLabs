@@ -5,6 +5,7 @@ import PromiseComponent from "async-await-promise/components/PromiseComponent";
 import CaseStudy from "case-study/CaseStudy";
 import NewsFeed from "case-study/news-feed/NewsFeed";
 import Todo from "case-study/todo/Todo";
+import Desctructuring from "desctructuring/Desctructuring";
 import ComponentRelation from "hooks/component-relation/ComponentRelation";
 import CustomHooks from "hooks/component-state/CustomHooks";
 import ClassComponent from "lifecycle/ClassComponent";
@@ -47,6 +48,8 @@ function Router() {
       <Route path="/async-await" element={<AsyncAwaitComponent />} />
       <Route path="/promise" element={<PromiseComponent />} />
       <Route path="/callback" element={<CallbackComponent />} />
+
+      <Route path="/desctructuring" element={<Desctructuring />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>
