@@ -48,13 +48,21 @@ function Header() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link text-light" to="/async-await-promise">
+                <NavLink
+                  className="nav-link text-light"
+                  to="/async-await-promise"
+                >
                   Async Await Promise
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link text-light" to="/desctructuring">
                   Desctructuring
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-light" to="/custom-hook">
+                  Custom Hook
                 </NavLink>
               </li>
             </ul>

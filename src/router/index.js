@@ -5,6 +5,7 @@ import PromiseComponent from "async-await-promise/components/PromiseComponent";
 import CaseStudy from "case-study/CaseStudy";
 import NewsFeed from "case-study/news-feed/NewsFeed";
 import Todo from "case-study/todo/Todo";
+import CustomHookWrapperPages from "custom-hooks/CustomHookWrapperPages";
 import Desctructuring from "desctructuring/Desctructuring";
 import ComponentRelation from "hooks/component-relation/ComponentRelation";
 import CustomHooks from "hooks/component-state/CustomHooks";
@@ -50,6 +51,7 @@ function Router() {
       <Route path="/callback" element={<CallbackComponent />} />
 
       <Route path="/desctructuring" element={<Desctructuring />} />
+      <Route path="/custom-hook" element={<CustomHookWrapperPages />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>

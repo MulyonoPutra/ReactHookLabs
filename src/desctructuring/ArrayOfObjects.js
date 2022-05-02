@@ -19,9 +19,7 @@ const profile = {
 };
 
 const ArrayOfObjects = () => {
-  const {
-    links: [{ linkName }, { linkName: linkName1 }],
-  } = profile;
+  const {links: [{ linkName }, { linkName: linkName1 }] } = profile;
 
   return (
     <div>
