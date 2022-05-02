@@ -17,7 +17,7 @@ function Home() {
         </div>
         <div className="col">
           <div
-            className="alert alert-primary"
+            className="alert alert-secondary"
             role="alert"
             style={{ width: "18rem" }}
           >
@@ -28,7 +28,7 @@ function Home() {
         </div>
         <div className="col">
           <div
-            className="alert alert-primary"
+            className="alert alert-success"
             role="alert"
             style={{ width: "18rem" }}
           >
@@ -39,7 +39,7 @@ function Home() {
         </div>
         <div className="col">
           <div
-            className="alert alert-primary"
+            className="alert alert-danger"
             role="alert"
             style={{ width: "18rem" }}
           >
@@ -50,7 +50,7 @@ function Home() {
         </div>
         <div className="col">
           <div
-            className="alert alert-primary"
+            className="alert alert-warning"
             role="alert"
             style={{ width: "18rem" }}
           >
@@ -61,7 +61,7 @@ function Home() {
         </div>
         <div className="col">
           <div
-            className="alert alert-primary"
+            className="alert alert-info"
             role="alert"
             style={{ width: "18rem" }}
           >
@@ -72,7 +72,7 @@ function Home() {
         </div>
         <div className="col">
           <div
-            className="alert alert-primary"
+            className="alert alert-danger"
             role="alert"
             style={{ width: "18rem" }}
           >
@@ -83,7 +83,7 @@ function Home() {
         </div>
         <div className="col">
           <div
-            className="alert alert-primary"
+            className="alert alert-dark"
             role="alert"
             style={{ width: "18rem" }}
           >
