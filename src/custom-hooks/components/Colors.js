@@ -6,7 +6,7 @@ const Colors = () => {
 
   useEffect(() => {
     console.log("Coming from Custom Hooks" + data);
-  });
+  }, []);
 
   return (
     <div>
