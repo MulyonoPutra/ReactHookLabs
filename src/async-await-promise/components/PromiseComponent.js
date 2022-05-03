@@ -1,10 +1,40 @@
 import { useState } from "react";
 
+const profiles = {
+  firstName: "Maryam ",
+  lastName: "Jameela",
+  age: 2,
+};
+
 const PromiseComponent = () => {
   const [text, setText] = useState("");
 
+  const [profile, setProfile] = useState(profiles);
+
+  const { firstName, lastName } = profile;
+
+  const callFirstName = () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(firstName);
+      }, 2000);
+    });
+  };
+
+  const callLastName = () => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(lastName);
+      }, 2000);
+    });
+  };
+
   const onSubmit = () => {
-    alert(text);
+    Promise.all([callFirstName(), callLastName()]).then(
+      ([firstName, lastName]) => {
+        setText(`${firstName} ${lastName}`);
+      }
+    );
   };
 
   return (
