@@ -18,7 +18,11 @@ const GetRequest = () => {
         </div>
         <ul className="list-group list-group-flush">
           {data.map((item) => {
-            return <li className="list-group-item">{item.name}</li>;
+            return (
+              <li className="list-group-item" key={item.name}>
+                {item.name}
+              </li>
+            );
           })}
         </ul>
       </div>
