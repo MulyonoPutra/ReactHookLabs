@@ -5,6 +5,7 @@ import Router from "router";
 import Header from "views/Header";
 import Counter from "state-management/context/use-reducer/Counter";
 import UserReducerPageWrapper from "state-management/context/use-reducer/UserReducerPageWrapper";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [toggle, setToggle] = useState(true);
@@ -13,7 +14,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Router/>
+      <Router />
+      <ToastContainer closeButton={true} position="bottom-right" />
       {/* <Counter /> */}
       {/* <UserReducerPageWrapper /> */}
       {/*  <ParentComponent /> */}
