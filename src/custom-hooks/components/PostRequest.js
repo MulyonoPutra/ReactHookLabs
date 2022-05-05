@@ -24,6 +24,12 @@ const PostRequest = () => {
     <div>
       <div className="container mt-4">
         <div className="card">
+          {" "}
+          <div className="card-header">
+            <h4>
+              <strong>Example POST Request</strong>
+            </h4>
+          </div>
           <div className="card-body">
             <form onSubmit={handleSubmit}>
               <label className="form-label">
