@@ -1,5 +1,3 @@
-import React from "react";
-import Colors from "./components/Colors";
 import GetRequest from "./components/GetRequest";
 import PostRequest from "./components/PostRequest";
 
@@ -7,6 +5,9 @@ const CustomHookWrapperPages = () => {
   return (
     <div>
       <div className="container">
+        <h1>
+          <strong>Custom Hook</strong>
+        </h1>
         <div className="row">
           <div className="col">
             {" "}
