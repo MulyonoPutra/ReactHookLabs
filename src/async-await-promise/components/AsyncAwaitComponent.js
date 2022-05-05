@@ -41,6 +41,7 @@ const AsyncAwaitComponent = () => {
       {" "}
       <div>
         <div className="container mt-4">
+          <h4>Wait for 2 seconds</h4>
           <div className="card">
             <div className="card-body">
               <button
