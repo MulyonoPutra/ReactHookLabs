@@ -10,6 +10,7 @@
     "axios": "^0.27.2",
     "dotenv": "^16.0.0",
     "react": "^18.0.0",
+    "react-code-blocks": "^0.0.9-0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",

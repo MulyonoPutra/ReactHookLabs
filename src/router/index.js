@@ -12,6 +12,9 @@ import CustomHooks from "hooks/component-state/CustomHooks";
 import ClassComponent from "lifecycle/ClassComponent";
 import FunctionalComponent from "lifecycle/FunctionalComponent";
 import Lifecycle from "lifecycle/Lifecycle";
+import PerformanceWrapperPages from "performance-and-optimization/PerformanceWrapperPages";
+import ReactMemo from "performance-and-optimization/ReactMemo";
+import ReactUseCallback from "performance-and-optimization/ReactUseCallback";
 import { Routes, Route } from "react-router-dom";
 import ContextPage from "state-management/context/global-context/components/ContextPage";
 import { MultipleContext } from "state-management/context/multiple-context/MultipleContext";
@@ -52,6 +55,10 @@ function Router() {
 
       <Route path="/desctructuring" element={<Desctructuring />} />
       <Route path="/custom-hook" element={<CustomHookWrapperPages />} />
+
+      <Route path="/performance" element={<PerformanceWrapperPages />} />
+      <Route path="/use-memo" element={<ReactMemo />} />
+      <Route path="/use-callback" element={<ReactUseCallback />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>

@@ -1,7 +1,5 @@
+export const PromiseSnippets = `
 import { useState } from "react";
-import { CopyBlock } from "react-code-blocks";
-import { PromiseSnippets } from "utils/code-snippets/PromiseSnippets";
-import { tomorrow } from "react-code-blocks";
 
 const profiles = {
   firstName: "Maryam ",
@@ -35,7 +33,7 @@ const PromiseComponent = () => {
   const onSubmit = () => {
     Promise.all([callFirstName(), callLastName()]).then(
       ([firstName, lastName]) => {
-        setText(`${firstName} ${lastName}`);
+        setText(\`\${firstName} \${lastName}\`);
       }
     );
   };
@@ -61,26 +59,11 @@ const PromiseComponent = () => {
             </div>
           </div>
         </div>
-        <div className="container mt-4 d-flex justify-content-center text-center">
-          <div className="card" style={{ width: "48rem" }}>
-            <div className="card-body">
-              <h5 className="card-title">Promise code snippets</h5>
-              <p className="card-text text-start">
-                <CopyBlock
-                  text={PromiseSnippets}
-                  language="javascript"
-                  showLineNumbers={true}
-                  startingLineNumber={1}
-                  theme={tomorrow}
-                  wrapLines
-                />
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
 };
 
 export default PromiseComponent;
+
+`;

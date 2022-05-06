@@ -92,6 +92,17 @@ function Home() {
             </NavLink>
           </div>
         </div>
+        <div className="col">
+          <div
+            className="alert alert-primary"
+            role="alert"
+            style={{ width: "18rem" }}
+          >
+            <NavLink className="nav-link" to="/performance">
+              Performance & Optimization
+            </NavLink>
+          </div>
+        </div>
       </div>
     </div>
   );
