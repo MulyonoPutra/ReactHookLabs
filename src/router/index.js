@@ -20,10 +20,11 @@ import ContextPage from "state-management/context/global-context/components/Cont
 import { MultipleContext } from "state-management/context/multiple-context/MultipleContext";
 import SingleContext from "state-management/context/single-context/SingleContext";
 import UserReducerPageWrapper from "state-management/context/use-reducer/UserReducerPageWrapper";
-import StateManagementContext from "state-management/StateManagementContext";
+import StateManagementContext from "state-management/context/StateManagementContext";
 import About from "views/About";
 import Home from "views/Home";
 import NotFound from "views/NotFound";
+import ReduxWrapperPages from "state-management/redux/ReduxWrapperPages";
 
 function Router() {
   return (
@@ -59,6 +60,8 @@ function Router() {
       <Route path="/performance" element={<PerformanceWrapperPages />} />
       <Route path="/use-memo" element={<ReactMemo />} />
       <Route path="/use-callback" element={<ReactUseCallback />} />
+
+      <Route path="/redux" element={<ReduxWrapperPages />} />
 
       <Route path="*" element={<NotFound />} />
     </Routes>

@@ -17,6 +17,17 @@ function Home() {
         </div>
         <div className="col">
           <div
+            className="alert alert-primary"
+            role="alert"
+            style={{ width: "18rem" }}
+          >
+            <NavLink className="nav-link" to="/redux">
+              State Management - Redux
+            </NavLink>
+          </div>
+        </div>
+        <div className="col">
+          <div
             className="alert alert-secondary"
             role="alert"
             style={{ width: "18rem" }}

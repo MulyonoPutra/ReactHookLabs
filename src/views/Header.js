@@ -7,7 +7,7 @@ function Header() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <NavLink className="nav-link text-light" to="/">
-          <h1>Learn Fundamental React Hooks</h1>
+          <h1>React Labs</h1>
         </NavLink>
       </header>
     </div>
