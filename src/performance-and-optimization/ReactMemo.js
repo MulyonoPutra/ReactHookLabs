@@ -18,14 +18,23 @@ const Parent = () => {
   const likeAction = () => setCount((current) => current + 1);
 
   return (
-    <div>
-      <p>
-        <i> -- Parent Component -- </i>
-      </p>
-      <button className="btn btn-primary" onClick={likeAction}>
-        Like {count}{" "}
-      </button>
-      <MemoizedChildComponent title="Hello" user={user} />
+    <div className="container mt-4 d-flex justify-content-center">
+      <div className="card" style={{ width: "28rem" }}>
+        <div className="card-header">
+          <span>
+            <strong>Parent Component</strong>
+          </span>
+        </div>
+        <span>
+          <i>Open Inspect Element to see the different</i>
+        </span>
+        <div className="card-body">
+          <button className="btn btn-primary" onClick={likeAction}>
+            Like {count}{" "}
+          </button>
+          <MemoizedChildComponent title="Hello" user={user} />
+        </div>
+      </div>
     </div>
   );
 };
@@ -37,12 +46,14 @@ const Child = ({ title, user }) => {
   console.log("Child");
   sleep(2000);
   return (
-    <div className="container">
-      <div className="card" style={{ width: "18rem" }}>
+    <div className="container mt-4 d-flex justify-content-center">
+      <div className="card" style={{ width: "20rem" }}>
+        <div className="card-header">
+          <span>
+            <strong>Child Component</strong>
+          </span>
+        </div>
         <div className="card-body">
-          <p>
-            <i> -- Child Component -- </i>
-          </p>
           <p>{title}</p>
           <p>{user.name}</p>
         </div>
