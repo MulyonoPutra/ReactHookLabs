@@ -2,6 +2,8 @@
     "beautify.options": {
     
     },
-    "editor.fontLigatures": false,
-    "editor.fontFamily": "Hack"
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "MonoLisa",
+    "editor.fontSize": 12,
+    "editor.fontWeight": "normal"
 }
